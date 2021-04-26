@@ -118,7 +118,7 @@ button {
     line-height: 1;
     background-color: rgba(0,0,204,1);
     border: 1px solid rgba(0,0,204,1);
-    color: rgba(255,255,255,.1); 
+    color: rgba(255,255,255,1); 
     padding: 1em;
     display: inline-block;
     margin: .5em; 
@@ -160,17 +160,17 @@ body { margin: 0;}
 
 /* MEDIA QUERIES */
 
-@media (min-with: 768px) {
+@media (min-width: 768px) {
    /* TABLET SIZED  STYLING GOES HERE */
 }
 
-@media (min-with: 1050px) {
+@media (min-width: 1050px) {
     body {
         font-size: 100% /* 16px */
     }
 }
 
-@media (min-with: 1250px) {
+@media (min-width: 1250px) {
     body {
         font-size: 112.5% /* 18px */
     }
@@ -194,7 +194,7 @@ body.demo::before {
     padding: .5em; 
 }
 
-@media (min-with: 768px) {
+@media (min-width: 768px) {
    body.demo::before {
         background-color: #bcb833;
         content: "Midsize (Tablet) Screen 768px - 1050px";
@@ -202,14 +202,14 @@ body.demo::before {
 
 }
 
-@media (min-with: 1050px) {
+@media (min-width: 1050px) {
     body.demo::before {
          background-color: #693;
          content: "Large (Notebook) Screen 1050px - 1250px";
      }
  }
 
- @media (min-with: 1250px) {
+ @media (min-width: 1250px) {
     body.demo::before {
          background-color: #09c;
          content: "Extra Large (Desktop) Screen 1250px +";
@@ -222,7 +222,7 @@ body.demo::before {
      margin-bottom: 4%;
  }
 
- @media (min-with: 768px) {
+ @media (min-width: 768px) {
 
     .row {
         display:flex; 
@@ -238,11 +238,11 @@ body.demo::before {
     }
 
     .row > .column.one-half {
-        max-width: 42%;
+        max-width: 46%;
     }
 
     .row > .column.one-third {
-        max-width: 25.3333%;
+        max-width: 29.3333%;
     }
 
     .row > .column.two-thirds {
@@ -250,14 +250,15 @@ body.demo::before {
     }
 
     .row > .column.one-fourth {
-        max-width: 12%;
+        max-width: 21%;
     }
 
     .row > .column.centered {
         margin-left: auto;
         margin-right: auto;
     }
- }
+ 
+}
 
  /* FOR DEMO PURPOSES ONLY */
  .demo .column {
@@ -265,3 +266,35 @@ body.demo::before {
      padding: .1em;
      text-align: center;
  }
+
+ /* SITE STRUCTURE */ 
+
+.container {
+    border: 2px solid red;
+}
+
+ /* SITE HEADER */
+ .site-header {
+     background-color: rgba(255,0,0,.2);
+ }
+
+/* LOGOAREA */ 
+.site-id {
+
+}
+
+ /* SITE MAIN */
+ .site-main {
+    background-color: rgba(0,255,0,.2);
+}
+
+/* SITE FOOTER */
+.site-footer {
+    background-color: rgba(0,0,255,.2);
+}
+
+
+/* HERO */
+.hero {
+    background-color: rgba(255,255,.2);
+}
