@@ -121,7 +121,7 @@ button {
     color: rgba(255,255,255,1); 
     padding: 1em;
     display: inline-block;
-    margin: .5em; 
+    margin: .5em .5em .5em .5em; 
     text-align: center;
     border-radius: .5em;   
 }
@@ -256,8 +256,7 @@ body.demo::before {
     .row > .column.centered {
         margin-left: auto;
         margin-right: auto;
-    }
- 
+    } 
 }
 
  /* FOR DEMO PURPOSES ONLY */
@@ -269,32 +268,70 @@ body.demo::before {
 
  /* SITE STRUCTURE */ 
 
-.container {
-    border: 2px solid red;
-}
-
  /* SITE HEADER */
  .site-header {
-     background-color: rgba(255,0,0,.2);
+     padding: 1em 0;
  }
 
-/* LOGOAREA */ 
-.site-id {
-
+ /* ON LARGER SCREENS PLACE LOGO LEFR AND NAV */
+ @media (min-width: 768px) {
+    .site.header .container {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+     }
+ }
+ 
+ /* STYLING FOR BOTH HEADER AND FOOTER */ 
+.site-header a,
+.site-footer a {
+    color:rgba(0, 0, 0, 0.8)
+}
+.site-header a:hover,
+.site-footer a:hover {
+    color: rgba(0,0,0,1);
+    text-decoration: none;
 }
 
- /* SITE MAIN */
- .site-main {
-    background-color: rgba(0,255,0,.2);
+/* LOGO AREA */ 
+
+.site-id h1 {
+    font-size: 1.5em;
+    margin: 0;
+    padding-top: .55em;
+    text-align: center;
 }
 
-/* SITE FOOTER */
-.site-footer {
-    background-color: rgba(0,0,255,.2);
+/*  SITE NAV */
+
+.site-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display:  flex; 
+    justify-content: center;
 }
 
+.site-nav a {
+    display: block;
+    padding: 1em;
+}
+
+/* SECTION */
+section {
+    padding: 3em 0
+}
 
 /* HERO */
+
 .hero {
-    background-color: rgba(255,255,.2);
+    padding: 6em 4%;
+    background-color: rgba(0,0,0,.1);
+    text-align: center;
+}
+
+.hero h1, p {
+    max-width: 600px;
+    margin-left: auto;  
+    margin-right: auto;
 }
