@@ -318,7 +318,7 @@ body.demo::before {
 }
 
 .site-nav .menu-button {
-    display: none; 
+   display: none; 
 }
 
 /* SECTION */
@@ -346,10 +346,6 @@ section {
     .toggle-nav .site-id {
         position:absolute;
     }
-
-    .toggle-nav .site-nav {
-        text-align:  right; 
-    }
     .toggle-nav .site-nav ul{
         text-align: right;  
     }
@@ -360,7 +356,7 @@ section {
         padding: .3em .8em;
         margin-bottom: .8em 0;
     }
-    .toggle-nav .site nav .menu-button::selection {
+    .toggle-nav .site-nav .menu-button::selection {
         background-color: rgba(255,255,255,0);
     }
     .toggle-nav .site-nav ul{

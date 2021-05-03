@@ -275,7 +275,7 @@ body.demo::before {
 
  /* ON LARGER SCREENS PLACE LOGO LEFR AND NAV */
  @media (min-width: 768px) {
-    .site.header .container {
+    .site-header .container {
         display: flex; 
         justify-content: space-between;
         align-items: center;
