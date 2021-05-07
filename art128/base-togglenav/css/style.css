@@ -346,7 +346,7 @@ section {
     .toggle-nav .site-id {
         position:absolute;
     }
-    .toggle-nav .site-nav ul{
+    .toggle-nav .site-nav {
         text-align: right;  
     }
     .toggle-nav .site-nav .menu-button{
@@ -378,7 +378,6 @@ section {
 
 /* NAVICON */
 .toggle-nav .site-nav .menu-button.navicon {
-    border: 2px solid red; 
     color: rgba(255,255,255,0);
     padding: 0;
 }

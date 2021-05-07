@@ -138,7 +138,8 @@ img {
 
 /* BUTTONS */
 .button,
-button {
+button,
+form input[type="submit"] {
     font-size: inherit;
     line-height: 1;
     background-color: rgba(0,0,204,1);
@@ -152,7 +153,8 @@ button {
 }
 
 .button:hover,
-button:hover {
+button:hover,
+form input[type="submit"]:hover {
     background-color: rgba(0,0,153,1);
     border-color: rgba(0,0,153,1);
     color: rgba(255,255,255,1);
@@ -371,10 +373,10 @@ section {
     .toggle-nav .site-id {
         position:absolute;
     }
-    .toggle-nav .site-nav ul{
+    .toggle-nav .site-nav {
         text-align: right;  
     }
-    .toggle-nav .site nav .menu-button{
+    .toggle-nav .site-nav .menu-button {
         display: block;  
         display: inline-block;
         cursor: pointer;
@@ -382,7 +384,7 @@ section {
         margin-bottom: .8em 0;
         border: 1px solid black
     }
-    .toggle-nav .site nav .menu-button::selection {
+    .toggle-nav .site-nav .menu-button::selection {
         background-color: rgba(255,255,255,0);
     }
     .toggle-nav .site-nav ul{
@@ -391,13 +393,13 @@ section {
     }
     .toggle-nav .site-nav a:hover {
         background-color: rgba(0, 0, 153, 1);
-        color: white
+        color: white;
     }
-    .toggle-nav [data-navstate="closed"] ul {
+    .toggle-nav[data-navstate="closed"] ul {
         height: 0;
         overflow: hidden;
     }
-    .toggle-nav [data-navstate="open"] ul {
+    .toggle-nav[data-navstate="open"] ul {
         height: auto;
         overflow: visible;
     }
@@ -476,4 +478,42 @@ article p:first-of-type:first-letter {
     margin-right: .4em; 
     margin-bottom:.2em;
     float:  left; 
+}
+
+/* FORM */
+
+form  {
+    max-width: 600px;
+    margin: 2em auto;
+}
+
+form label,
+form input,
+form textarea {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    font-size: 1em;
+}
+
+form label {
+    margin-top: 1.5em;
+    margin-bottom: 0.25em;
+}
+
+form input[type="text"],
+form textarea {
+    border: 1px solid  #ccc;
+    padding:  0.5em; 
+    color: #666
+}
+
+form textarea {
+    min-height: 10em;
+    line-height: 1.5;
+}
+
+form input[type="submit"] {
+    margin-top: 1.5em;
+    width: auto;
 }
