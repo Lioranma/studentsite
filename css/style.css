@@ -68,9 +68,10 @@ footer {
 
 /*LAYOUT */
 .container {
-    border:1px  solid red;
+    margin: 0 auto;
     max-width: 1000px;
-    margin:  0 auto;
+   padding: 0 1em;
+   background: pink; 
 }
 
 @media (min-width: 768px) {
@@ -203,4 +204,29 @@ dt {
 }
 dd {
     margin: 0;
+}
+
+/* TWO COLUMN LISTS */
+
+.list-two-col {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-two-col ul {
+    margin-bottom: 1em; 
+}
+
+.list-two-col ul ul {
+    margin-bottom: 0; 
+}
+
+.list-two-col li {
+    padding-right: 1em;
+}
+
+/* ASSIGNMENT LISTS */
+
+.list-assignments li li {
+    color: rgba(255, 255, 255, 0.4);
 }
